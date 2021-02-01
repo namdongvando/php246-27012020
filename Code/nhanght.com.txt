@@ -1,0 +1,816 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Cache-control" content="public">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="msvalidate.01" content="7EA32E0CD3312EE0F0C3AA9F0F92A7C3" />
+	<meta name="google-site-verification" content="XRuLdB3PNx98j3zx4xxYmceruEiVE4xV_sTf1f26LY4" />
+	<title>Nhất Nghệ Education JSC</title>
+
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css" />
+    <link rel="shortcut icon" type="image/png" href="../images/assets/favicon.png" />
+<style>
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:8000;
+  background-color:#000;
+  display:none;
+}
+  
+#boxes .window {
+  position:fixed;
+  width:100%;
+  height:auto;
+  display:none;
+  z-index:9000;
+}
+#boxes .d-blank {
+	position:absolute;
+	right:0;
+	top:0;
+	width:20%;
+	height:20%;
+	z-index:9999;
+	background-color:transparent;
+}
+#boxes .d-blank input{
+	margin:2%;
+	border:none;
+	background-color:transparent;
+	color:red;
+	z-index:9999;
+	opacity:1;
+}
+#boxes #dialog1 {
+  width:71%; 
+  height:40%;
+  max-width: 920px;
+}
+
+#boxes .d-header{
+width:100%;
+margin: 0 auto;
+padding-left:0%;
+padding-top:3%;
+	position:absolute;
+}
+#boxes .d-header img{
+	text-align:center;
+}
+
+ 
+</style>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body class="home2 header2">
+		    <div id="pageloader">
+		<div class="pageloader">
+			<div class="thecube">
+				<div class="cube c1"></div>
+				<div class="cube c2"></div>
+				<div class="cube c4"></div>
+				<div class="cube c3"></div>
+			</div>
+			<div class="textedit">
+				<span class="site-name">NHAT NGHE</span>
+			</div>	
+		</div><!-- .pageloader -->
+	</div><!-- #pageloader -->
+	<div id="wrapper">
+<header id="header" class="site-header">
+	<div class="mid-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-8 col-xs-9">
+					<div class="site-brand">
+						<a class="logo" href="/">
+							<img src="/images/assets/logonn.png" alt="Nhất Nghệ" />
+						</a>
+					</div><!-- .site-brand -->
+				</div>
+				<div class="col-md-9 col-sm-4 col-xs-3">
+					<nav class="main-menu">
+						<span class="mobile-btn"><i class="fa fa-bars"></i></span>
+						<ul>
+							<li class="current-menu-item"><a href="http://nhatnghe.com">Home</a>
+                                <ul class="sub-menu">
+									<li><a href="/gioithieu">Về Chúng Tôi</a></li>
+								</ul>
+                            </li>
+							<li ><a href="/khoahoc/all">Chương Trình Học</a>
+								<div class="sub-menu mega-menu">
+									<div class="row">
+										<div class="col-md-3">
+											<h3>Networking</h3>
+											<ul style=" border-top-style: solid;border-top: thick double #30a4dc;">
+												<li><a href="/chuongtrinhhoc/mangcb">Lắp Ráp, Cài Đặt Máy Tính Và Mạng</a></li>
+												<li><a href="/chuongtrinhhoc/pctroubleshooting">PC Trouble Shooting</a></li>
+												<li><a href="/chuongtrinhhoc/mcsa2016">MCSA 2016</li>
+												<li><a href="/chuongtrinhhoc/mcse2012">MCSE:Core Infrastructure</a></li>
+												<li><a href="/chuongtrinhhoc/linuxlpi">Linux LPI 1 + 2 (V8.1)</a></li>
+												<li><a href="/chuongtrinhhoc/linuxlpinc">Linux LPI Advanced</a></li>
+												<li><a href="/chuongtrinhhoc/linuxwin">Linux Thay Thế Windows</a></li>
+												<li><a href="/chuongtrinhhoc/ccna">CCNA 200-301 (V.1)</a></li>
+												<li><a href="/chuongtrinhhoc/hacker">Bảo Mật Mạng "Hacker Mũ Trắng"</a></li>
+											</ul>
+										</div>
+										<div class="col-md-3">
+											<h3>Web + Database + LT</h3>
+											<ul style=" border-top-style: solid;border-top: thick double #f7941e;">
+												<li><a href="/chuongtrinhhoc/csharpcb">Easy C#: Lập Trình Căn Bản Dùng C#</a></li>
+												<li><a href="/chuongtrinhhoc/webseo">Thiết Kế Web Chuẩn Seo Với Wordpress</a></li>
+												<li><a href="/chuongtrinhhoc/phpmysql">Lập Trình Web PHP + MySQL</a></li>
+												<li><a href="/chuongtrinhhoc/aspcore">Lập Trình Web ASP.NET Core 3.1</a></li>
+												<li><a href="/chuongtrinhhoc/python">Lập Trình Python<img src="/images/hot.gif"></a></li>
+												<li><a href="/chuongtrinhhoc/reactjs">Lập trình Full Stack: Web API + ReactJS</a></li>
+												<li><a href="/chuongtrinhhoc/javaweb">Lập Trình Web với Java</a></li>
+												<li><a href="/chuongtrinhhoc/androidcb">Lập Trình Android</a></li>
+                                                <li><a href="/chuongtrinhhoc/framework">Lập Trình Web Laravel Framework</a></li>
+											</ul>
+										</div>
+										<div class="col-md-3">
+											<h3>Quảng Bá Thương Hiệu</h3>
+											<ul style=" border-top-style: solid;border-top: thick double #a97bb6;">
+												<li><a href="/chuongtrinhhoc/seo2019">SEO - Quảng Bá Thương Hiệu Doanh Nghiệp</a></li>
+												<li><a href="/chuongtrinhhoc/googleads">Quảng Cáo Với Google ADS</a></li>
+                                                <li><a href="/chuongtrinhhoc/zalo">Zalo Marketing</a></li>
+											</ul>
+											<h3>Đồ Họa</h3>
+											<ul style=" border-top-style: solid;border-top: thick double #a97bb6;">
+												<li><a href="/chuongtrinhhoc/dohoaquangcao">Đồ Họa Quảng Cáo</a></li>
+												<li><a href="/chuongtrinhhoc/aftereffect">Khóa Học Dựng Phim & Kỹ Xảo - Adobe After Effects</a></li>
+											</ul>
+										</div>
+										<div class="col-md-3">
+											<h3>Chuyên Đề</h3>
+											<ul style=" border-top-style: solid;border-top: thick double #8dc63f;">
+												<li><a href="/chuongtrinhhoc/sqlserver2017">Quản Trị CSDL SQL Server 2017</a></li>
+												<li><a href="/chuongtrinhhoc/office365">Mastering Microsoft 365 Enterprises</a></li>
+												<!--<li><a href="/chuongtrinhhoc/blockchain">Công Nghệ Blockchain</a><img src="/images/hot.gif"></li>-->
+												<li><a href="/chuongtrinhhoc/sharepointonline">Microsoft SharePoint Online</a></li>
+												<li><a href="/chuongtrinhhoc/azure">Triển Khai Hạ Tầng Ảo Hóa Microsoft Azure (AZ-104)</a></li>
+												<li><a href="/chuongtrinhhoc/aohoa">Ảo Hóa: Hyper V - System Center - Private Cloud</a></li>
+												<li><a href="/chuongtrinhhoc/vsphereicmv7">VMware vSphere: ICM [V7]</a></li>
+												<li><a href="/chuongtrinhhoc/vsphereoptimizeandscale">VMware vSphere: Optimize and Scale [V6.5]</a></li>
+										<!--		<li><a href="/chuongtrinhhoc/vca6">VCA 6: Data Center Virtualization Fundamentals [V6]</a></li>-->
+											<!--	<li><a href="/chuongtrinhhoc/aohoavmware">Mastering VMware vSphere 6.0</a></li>-->
+												<li><a href="/chuongtrinhhoc/exchange2016">Mastering Exchange Server 2016</a></li>
+												<li><a href="/chuongtrinhhoc/oracle11gr2">Quản Trị Oracle 11gR2 & Administration</a></li>
+											</ul>
+										</div>
+									</div><!-- .row -->
+								</div><!-- .mega-menu -->
+							</li>
+							<li ><a href="/lichkhaigiang">Lịch Khai Giảng</a>
+								<ul class="sub-menu">
+									<li><a href="/lichkhaigiang">Lịch Khai Giảng</a></li>
+									<li><a href="/hocphi">Học Phí</a></li>
+								</ul>
+							</li>
+							<li ><a href="/lotrinhhoc">Lộ Trình Học</a></li>
+							<li ><a href="/phongthi">Thi Quốc Tế</a>
+								<ul class="sub-menu">
+									<li><a href="/hdprometric">Hướng dẫn đăng ký thi Prometric</a></li>
+									<li><a href="/huongdanthi">Hướng dẫn đăng ký thi IT</a></li>
+									<li><a href="/lotrinhthi">Lộ Trình Thi IT</a></li>
+								</ul>
+							</li>
+							<li><a href="http://forum.nhatnghe.com/">Diễn Đàn</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</div><!-- .mid-header -->
+<!--Start of Google Script-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-103696607-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/576b27b73c4eb124077ef457/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</header><!-- .site-header -->		<div id="content" class="site-content">
+			<main id="main" class="site-main">
+				<section class="main-slider">
+					<div class="slider">
+						<div class="item">
+							<img src="images/slider/041.jpg" alt="" />
+							<div class="container">
+								<div class="slider-content">
+									
+								</div><!-- .slider-content -->
+							</div><!-- .container -->
+						</div><!-- .item -->
+						<div class="item">
+							<img src="images/slider/042.jpg" alt="" />
+							<div class="container">
+								<div class="slider-content">
+									
+								</div><!-- .slider-content -->
+							</div><!-- .container -->
+						</div><!-- .item -->
+						<div class="item">
+							<img src="images/slider/7.jpg" alt="" />
+							<div class="container">
+								<div class="slider-content">
+									
+								</div><!-- .slider-content -->
+							</div><!-- .container -->
+						</div><!-- .item -->
+						<div class="item">
+							<img src="images/slider/2.jpg" alt="" />
+							<div class="container">
+								<div class="slider-content">
+									
+								</div><!-- .slider-content -->
+							</div><!-- .container -->
+						</div><!-- .item -->
+					
+					<div class="slider">
+						<div class="item">
+							<img src="images/slider/elenabsl.jpg" alt="" />
+							<div class="container">
+								<div class="slider-content">
+									
+								</div><!-- .slider-content -->
+							</div><!-- .container -->
+						</div><!-- .item -->
+						
+					<div class="slider">
+						<div class="item">
+							<img src="images/slider/slider2.jpg" alt="" />
+							<div class="container">
+								<div class="slider-content">
+									
+								</div><!-- .slider-content -->
+							</div><!-- .container -->
+						</div><!-- .item -->	
+				</section><!-- .main-slider --><br/>
+<!-- Banner quang cao giam gia -->
+	<div id="boxes">
+		<div id="dialog1" class="window">
+			<div class="d-blank">
+				<input type="button" value="X" class="close"/>
+			</div>
+		  <div class="d-header">
+				<a href="http://nhatnghe.com/lichkhaigiang"><img alt="Tet 2021" src="../images/popup/tet2021.jpg"/></a>
+		  </div>
+		</div>
+		 <div id="mask"></div>
+	</div>
+	<!-- -->
+	<main>
+	<section id="home-blog">
+					<div class="container">
+						<h2 class="main-title ribbon"><span>Tin Tức</span></h2>
+						<p class="center">Cập nhật tin tức mới nhất từ Nhất Nghệ</p>
+						
+						<div class="row animation-element fade-in">
+							
+							
+							
+							<article class="col-md-4 col-sm-6 post">
+								<div class="inner-post">
+									<div class="post-thumb">
+										<a href="http://forum.nhatnghe.com/forumdisplay.php?f=111" class="mini-zoom"><img src="/images/news/tuyendung.jpg" alt="" /></a>
+									</div><!-- .post-thumb -->
+
+									<div class="post-info">
+										<h3 class="post-title"><a href="http://forum.nhatnghe.com/forumdisplay.php?f=111">Thông tin tuyển dụng </a></h3>
+										<ul class="post-meta">
+											<li><i class="fa fa-clock-o"></i> Cập nhật ngày 22/05/2020</li>
+										</ul>
+										<div class="post-desc">
+										<ul>
+											<li><a href=" http://forum.nhatnghe.com/showthread.php?p=2054820">Công ty TNHH Công nghệ Di Động Việt</a></li>
+											<li><a href=" http://forum.nhatnghe.com/showthread.php?p=2054912">Công ty Cổ phần và Kết Cấu Thép Đại Tín</a></li>
+											
+											<li><a href=" http://forum.nhatnghe.com/showthread.php?p=2054082">Công ty Gia Minh (GMC) – Agency cho nhãn hàng ổ cứng Seagate</a></li>
+											<li><a href=" http://forum.nhatnghe.com/showthread.php?p=2054257">Công ty NETNAM</a></li>
+											<li><a href=" http://forum.nhatnghe.com/showthread.php?p=2053624#post2053624">Công ty TNHH Trung Lợi</a></li>
+											<li><a href="http://forum.nhatnghe.com/showthread.php?p=2053528#post2053528">Công ty Theodore Alexander</a></li>
+                                            <li><a href=" http://forum.nhatnghe.com/showthread.php?p=2053527#post2053527">Công Ty TNHH Viễn Thông Minh Tú</a></li>
+											<li><a href=" http://forum.nhatnghe.com/showthread.php?p=2053428#post2053428">Công Ty CPDV Địa Ốc Hoàng Khang</a></li>
+											
+											
+											
+                                        </ul>
+										</div>
+										<!-- .post-desc -->
+										<a href="http://forum.nhatnghe.com/forumdisplay.php?f=111" class="link">Xem chi tiết</a>
+									</div><!-- .post-info -->
+								</div><!-- .inner-post -->
+							</article>
+							<!--
+							<article class="col-md-4 col-sm-6 post">
+								<div class="inner-post">
+									<div class="post-thumb">
+										<a href="http://www.nhatnghe.com/chuongtrinhhoc/aftereffect" class="mini-zoom"><img src="images/news/After-Effect.jpg" alt="" /></a>
+									</div><!-- .post-thumb -- >
+
+									<div class="post-info">
+										<h3 class="post-title"><a href="http://www.nhatnghe.com/chuongtrinhhoc/aftereffect">Khóa học Dựng Phim & Kỹ Xảo - Adobe After Effects</a></h3>
+										<ul class="post-meta">
+											<li><i class="fa fa-clock-o"></i> Cập nhật ngày 22/10/17</li>
+										</ul>
+										<div class="post-desc">
+										<strong style="color:red;">Giảm 30% HP</strong></br>
+										<ul>
+											<li>Diễn hoạt hình ảnh - Motion graphic là lĩnh vực đang được sử dụng để quảng cáo sản phẩm, 
+											quảng bá hình ảnh của doanh nghiệp hoặc đơn giản diễn tả một chủ đề thời thượng mà bạn đang quan tâm. 
+											Bạn muốn tự tay thiết kế 1 tác phẩm motion graphic thì đây chính là lớp học dành cho các bạn.</li>
+										</ul>
+										</div>
+										<!-- .post-desc -- >
+										<a href="http://www.nhatnghe.com/chuongtrinhhoc/aftereffect" class="link">Xem chi tiết</a>
+									</div><!-- .post-info -- >
+								</div><!-- .inner-post -- >
+							</article> -->
+							<!--
+							<article class="col-md-4 col-sm-6 post">
+								<div class="inner-post">
+									<div class="post-thumb">
+										<a href="http://forum.nhatnghe.com/showthread.php?t=855950" class="mini-zoom"><img src="/images/417x324/testing.jpg" alt="" /></a>
+									</div><!-- .post-thumb -- >
+									<div class="post-info">
+										<h3 class="post-title"><a href="http://forum.nhatnghe.com/showthread.php?t=855950">Thông báo tạm hoãn thi</a></h3>
+										<ul class="post-meta">
+											<li><i class="fa fa-clock-o"></i> Cập nhật ngày 23/03/2020</li>
+										</ul>
+										<div class="post-desc">
+										<ul>
+											<li> Tạm hoãn phòng thi quốc tế đến khi có thông báo khác. </li>
+										</ul>
+											
+										</div>
+										<!-- .post-desc -- >
+										<a href="http://forum.nhatnghe.com/showthread.php?t=855950" class="link">Xem chi tiết</a>
+									</div><!-- .post-info -- >
+								</div><!-- .inner-post -- >
+							</article> -->
+							<!--
+							<article class="col-md-4 col-sm-6 post">
+								<div class="inner-post">
+									<div class="post-thumb">
+										<a href="http://nhatnghe.com/chuongtrinhhoc/mcsa2016" class="mini-zoom"><img src="/images/417x324/in_windows2016.jpg" alt="" /></a>
+									</div><!-- .post-thumb -- >
+									<div class="post-info">
+										<h3 class="post-title"><a href="http://nhatnghe.com/chuongtrinhhoc/mcsa2016">Khóa Học MCSA 2016</a></h3>
+										<ul class="post-meta">
+											<li><i class="fa fa-clock-o"></i> Cập nhật ngày 04/05/20</li>
+										</ul>
+										<div class="post-desc">
+										<ul>
+											<li>Microsoft Certified Solutions Associate (MCSA) là một trong các Chứng Chỉ Quản Trị Mạng thông dụng và cần thiết nhất đối với các chuyên gia CNTT. Chứng chỉ MCSA do hãng công nghệ Microsoft cấp nhằm chứng nhận cho các chuyên gia CNTT có đủ khả năng triển khai cài đặt, cấu hình và vận hành hệ thống mạng doanh nghiệp trên nền tảng hệ điều hành Windows. </li>
+										</ul>
+											
+										</div>
+										<!-- .post-desc -- >
+										<a href="http://nhatnghe.com/chuongtrinhhoc/mcsa2016" class="link">Xem chi tiết</a>
+									</div><!-- .post-info -- >
+								</div><!-- .inner-post - ->
+							</article> -->
+							<article class="col-md-4 col-sm-6 post">
+								<div class="inner-post">
+									<div class="post-thumb">
+										<a href="http://nhatnghe.com" class="mini-zoom"><img src="../images/popup/tet2021.jpg" alt="" /></a>
+									</div><!-- .post-thumb -->
+
+									<div class="post-info">
+										<h3 class="post-title"><a href="http://nhatnghe.com">Ưu đãi giảm giá Tết 2021</a></h3>
+										<ul class="post-meta">
+											<li><i class="fa fa-clock-o"></i> Cập nhật ngày 05/01/2021</li>
+										</ul>
+										<div class="post-desc">
+										<ul>
+											<li>Giảm 5%-10% khi đăng kí các khóa học.</li>
+											<li>Đăng kí đến ngày 02.02.2021 (các lớp khai giảng từ ngày 18.01.2021).</li>
+											* Chỉ áp dụng các lịch hiện có trên website
+										</ul>
+										</div>
+										<!-- .post-desc -->
+										<a href="http://nhatnghe.com/lichkhaigiang" class="link">Đăng ký ngay!</a>
+									</div><!-- .post-info -->
+								</div><!-- .inner-post -->
+							</article>
+							<article class="col-md-4 col-sm-6 post">
+								<div class="inner-post">
+									<div class="post-thumb">
+										<a href="http://nhatnghe.com" class="mini-zoom"><img src="../images/417x324/newyear.jpg" alt="" /></a>
+									</div><!-- .post-thumb -->
+
+									<div class="post-info">
+										<h3 class="post-title"><a href="http://nhatnghe.com">Thông báo lịch nghỉ Tết Nguyên Đán Tân Sửu 2021</a></h3>
+										<ul class="post-meta">
+											<li><i class="fa fa-clock-o"></i> Cập nhật ngày 05/01/2021</li>
+										</ul>
+										<div class="post-desc">
+										<ul>
+											1/ Trung tâm nghỉ từ ngày 04.02.2021 (mùng 23AL) đến ngày 18.02.2021 (mùng 7AL). Ngày 19.02.2021 (mùng 8AL) làm việc lại.</br>
+
+											2/ Học viên nghỉ Tết từ ngày 04.02.2021 (mùng 23AL) đến ngày 21.02.2021 (mùng 10AL). Ngày 22.02.2021 (mùng 11AL) đi học lại: </br>
+											<li> - Các lớp 2.4.6: ngày 03.02.2021 (thứ 4): học ngày cuối. Ngày 22.02.2021 đi học lại.</li>
+											<li>- Các lớp 3.5.7: ngày 02.02.2021 (thứ 3): học ngày cuối. Ngày 23.02.2020 đi học lại. </li>
+											<li>-  Các lớp T7&CN: ngày 31.01.2021 (CN): học ngày cuối. Ngày 27.02.2020 đi học lại.</li>
+											Chúc các bạn năm mới An Khang Thịnh Vượng!</br>
+											Trân trọng.
+										</ul>
+										</div>
+										<!-- .post-desc -->
+										<a href="http://nhatnghe.com" class="link">Xem thêm</a>
+									</div><!-- .post-info -->
+								</div><!-- .inner-post -->
+							</article>
+							<!--
+							<article class="col-md-4 col-sm-6 post">
+								<div class="inner-post">
+									<div class="post-thumb">
+										<a href="http://forum.nhatnghe.com" class="mini-zoom"><img src="../images/popup/tet2020.jpg" alt="" /></a>
+									</div><!-- .post-thumb -- >
+
+									<div class="post-info">
+										<h3 class="post-title"><a href="http://forum.nhatnghe.com">Thông Tin Nghỉ Tết 2020</a></h3>
+										<ul class="post-meta">
+											<li><i class="fa fa-clock-o"></i> Cập nhật ngày 02/01/20</li>
+										</ul>
+										<div class="post-desc">
+										<ul>
+											Nhất Nghệ thông báo về lịch nghỉ Tết Nguyên Đán 2020: </br>
+											<li>Trung tâm và Học viên nghỉ Tết từ ngày 18.01.2020 (mùng 24AL) đến ngày 03.02.2020 (mùng 10AL) đi học và làm việc lại. </li>
+											<li>Các lớp 2.4.6: ngày 17.01.2020 (thứ 6): học ngày cuối. Ngày 03.02.2020 đi học lại bình thường.</li>
+											<li>Các lớp 3.5.7: ngày 16.01.2020 (thứ 5): học ngày cuối. Ngày 04.02.2020 đi học lại bình thường.  </li>
+										</ul>
+										</div>
+										<!-- .post-desc -- >
+										<a href="/" class="link">Chúc các bạn năm mới An Khang Thịnh Vượng!</a>
+									</div><!-- .post-info -- >
+								</div><!-- .inner-post -- >
+							</article> -->
+							
+							
+							 
+							<!--
+							<article class="col-md-4 col-sm-6 post">
+								<div class="inner-post">
+									<div class="post-thumb">
+										<a href="http://www.nhatnghe.com/forum/forumdisplay.php?f=139" class="mini-zoom"><img src="images/placeholder/hoithao/tin01_upgrade.jpg" alt="" /></a>
+									</div><!-- .post-thumb -->
+<!--
+									<div class="post-info">
+										<h3 class="post-title"><a href="http://nhatnghe.com/forum/showthread.php?p=2025274#post2025274">Miễn phí Thi Upgrade MCSA 2016</a></h3>
+										<ul class="post-meta">
+											<li><i class="fa fa-clock-o"></i> Cập nhật ngày 06/06/16</li>
+										</ul>
+										<div class="post-desc">
+											<p>Tất cả những bạn hoàn tất 3 môn MCSA 2012: 410, 411, 412 trong khoảng thời gian từ 01/05 đến ngày 30/06/2016 sẽ được MICROSOFT gửi tặng VOUCHER thi môn 743: Upgrade MCSA Windows Server 2016 qua email.</p>
+										</div><!-- .post-desc --><!--
+										<a href="http://nhatnghe.com/forum/showthread.php?p=2025274#post2025274" class="link">Xem chi tiết</a>
+									</div><!-- .post-info --><!--
+								</div><!-- .inner-post --><!--
+							</article>-->
+						</div>
+					</div>					
+				</section><!-- #home-blog -->
+		<section id="home-event-2">
+					<div class="container">
+						<h2 class="main-title ribbon"><span>Chương trình mới</span></h2>						
+                        <div class="row animation-element fade-in">
+                        <div class="event col-md-4 col-sm-4 col-xs-4 free">
+								<div class="event-inner shadow">
+									<div class="event-thumb">
+										<a href="/chuongtrinhhoc/office365" class="mini-zoom"><img alt="" src="../images/417x324/masteroffice365.jpg" /></a>
+									</div><!-- .event-thumb -->
+
+									<div class="event-date">
+										<span>24</span>Dec
+									</div>
+										
+									<div class="event-info">
+										<h3 class="post-title"><a href="/chuongtrinhhoc/office365">MASTERING MICROSOFT 365 ENTERPRISE</a></h3>
+										<ul class="event-meta">
+											<li>Khai Giảng: Xem lịch khai giảng</li>
+											<li>Thời Lượng: 5 ngày (Full day: 8h-12h, 13h-17h) Học vào thứ 7 và Chủ nhật</li>
+											<li>Học Phí: 5.000.000 VND</li>
+										</ul>
+									</div><!-- .event-info -->
+								</div><!-- .event-inner -->
+							</div><!-- .course -->
+                            
+							<div class="event col-md-4 col-sm-4 col-xs-4 free">
+								<div class="event-inner shadow">
+									<div class="event-thumb">
+										<a href="/chuongtrinhhoc/ccna" class="mini-zoom"><img alt="" src="../images/417x324/ccna.jpg" /></a>
+									</div><!-- .event-thumb -->
+
+									<div class="event-date">
+										<span>24</span>Dec
+									</div>
+										
+									<div class="event-info">
+										<h3 class="post-title"><a href="/chuongtrinhhoc/ccna">CCNA – CISCO CERTIFIED NETWORK ASSOCIATE 200-301 (V.1)</a></h3>
+										<ul class="event-meta">
+											<li>Khai Giảng: Xem lịch khai giảng</li>
+											<li>Thời Lượng: 3.5 tháng (tuần 3 buổi, buổi 2h) hoặc (tuần 2 buổi (Thứ 7 và Chủ Nhật), buổi 3h)</li>
+											<li>Học Phí: 3.500.000 VND</li>
+										</ul>
+									</div><!-- .event-info -->
+								</div><!-- .event-inner -->
+							</div><!-- .course -->
+							<div class="event col-md-4 col-sm-4 col-xs-4 free">
+								<div class="event-inner shadow">
+									<div class="event-thumb">
+										<a href="/chuongtrinhhoc/python" class="mini-zoom"><img alt="" src="../images/417x324/python.jpg" /></a>
+									</div><!-- .event-thumb -->
+
+									<div class="event-date">
+										<span>24</span>Aug
+									</div>
+										
+									<div class="event-info">
+										<h3 class="post-title"><a href="/chuongtrinhhoc/python">LẬP TRÌNH PYTHON CƠ BẢN</a></h3>
+                                        <ul class="event-meta">
+                                          <li>Khai Giảng: Xem lịch khai giảng<li>
+                                          <li>Thời Lượng: Khóa học 54 giờ, 1.5 tháng (tuần 3 buổi, 3 giờ/buổi)</li>
+                                          <li>Học Phí: 2.500.000 VND</li>
+                                        </ul>
+									</div><!-- .event-info -->
+								</div><!-- .event-inner -->
+							</div><!-- .course -->
+							
+							
+							
+							
+							
+						</div>s
+						<a href="/khoahoc/all" class="button large rounded see-more-btn">Xem thêm</a>
+					</div>					
+				</section><!-- #home-event-2 -->
+	<section id="university-courses-2">
+
+	<div class="container">
+			<h2 class="main-title ribbon"><span>CHƯƠNG TRÌNH HỌC</span></h2>
+			<p class="center"></p>
+			<div class="row animation-element fade-in">
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="image-box">
+						<a href="/khoahoc/mangpc" class="mini-zoom"><img src="../images/placeholder/image1.jpg" alt="" /></a>
+						<a href="/khoahoc/mangpc" class="caption">Mạng & PC</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="image-box">
+						<a href="/khoahoc/webdev" class="mini-zoom"><img src="../images/placeholder/image2.jpg" alt="" /></a>
+						<a href="/khoahoc/webdev" class="caption">Web & Database</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="image-box">
+						<a href="/khoahoc/dohoa" class="mini-zoom"><img src="../images/placeholder/image3.jpg" alt="" /></a>
+						<a href="/khoahoc/dohoa" class="caption">Đồ Họa</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="image-box">
+						<a href="/khoahoc/ltdidong" class="mini-zoom"><img src="../images/placeholder/image4.jpg" alt="" /></a>
+						<a href="/khoahoc/ltdidong" class="caption">Lập Trình Di Động</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="image-box">
+						<a href="/khoahoc/seo" class="mini-zoom"><img src="../images/placeholder/image5.jpg" alt="" /></a>
+						<a href="/khoahoc/seo" class="caption">Quảng Bá Thương Hiệu</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="image-box">
+						<a href="/khoahoc/chuyende" class="mini-zoom"><img src="../images/placeholder/image6.jpg" alt="" /></a>
+						<a href="/khoahoc/chuyende" class="caption">Chuyên Đề</a>
+					</div>
+				</div>
+			</div><!-- .row -->
+		</div><!-- .container -->
+					
+				
+				
+				
+				
+		
+	</section><!-- #university-courses-2 -->
+				
+
+				
+			</main><!-- .site-main -->
+		</div><!-- .site-content -->
+  
+		<div id="bottom" class="site-bottom">
+			<div class="container">
+				<div class="footer-widget bottom1">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="widget">
+								<h3 class="widget-title">Kết nối với chúng tôi</h3>
+								<p></p>
+								<div class="socials">
+									<ul>
+										<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+										<li><a href="https://www.facebook.com/nhatnghe.online" target="_blank"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+										<li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
+									</ul>
+								</div>
+							</div><!-- .widget -->
+						</div>
+
+						<div class="col-md-3 col-sm-6">
+							<div class="widget">
+								<h3 class="widget-title">Tags</h3>
+								<div class="tags-cloud">
+									<a href="#">MCSA 2016</a>
+									<a href="#">MCSE Cloud Platform and Infrastructure</a>
+									<a href="#">Lập trình iOS</a>
+									<a href="#">Lập trình PHP</a>
+									<a href="#">Linux căn bản</a>
+									<a href="#">Lắp ráp máy tính</a>
+									<a href="#">Lập trình Android</a>
+									<a href="#">SEO</a>
+									<a href="#">Office 365</a>
+									<a href="#">Quản Trị Sharepoint</a>
+									<a href="#">Lập trình ASP.NET</a>
+									<a href="#">CCNA</a>
+									<a href="#">Đồ họa quảng cáo</a>
+									<a href="#">VMWare</a>
+								</div><!-- .tags-cloud -->
+							</div><!-- .widget -->
+						</div>
+                            <div class="col-md-3 col-sm-6">
+							<div class="widget">
+								<h3 class="widget-title">Khóa học tiêu biểu</h3>
+								<ul>
+									<li><a href="/chuongtrinhhoc/mangcb">Lắp ráp, cài đặt máy tính và mạng</a></li>
+									<li><a href="/chuongtrinhhoc/mcsa2016">MCSA 2016</a></li>
+									<li><a href="/chuongtrinhhoc/mcse2012">MCSE Cloud Platform and Infrastructure</a></li>
+									<li><a href="/chuongtrinhhoc/ccna">CCNA</a></li>
+									<li><a href="/chuongtrinhhoc/vsphereoptimizeandscale">Mastering VMware vSphere 6.5</a></li>
+									<li><a href="/chuongtrinhhoc/webdoanhnghiep">Thiết kế Web doanh nghiệp</a></li>
+									<li><a href="/chuongtrinhhoc/ceh">Bảo mật mạng Hacker mũ trắng</a></li>
+									<li><a href="/chuongtrinhhoc/phpcb">Lập trình PHP + MySQL</a></li>
+								</ul>
+							</div><!-- .widget -->
+						</div>
+						<style>
+						#diachi {z-index:1;
+							position: fixed;
+							top:20%;
+							right:20%;
+							}
+						a > #diachi {display: none; }
+						a:hover > #diachi {display: block;}
+						</style>
+						<div class="col-md-3 col-sm-6">
+							<div class="widget contact-widget">
+								<h3 class="widget-title">Liên Hệ</h3>
+								<ul>
+									<li class="address"> <a target="_blank" href="https://goo.gl/maps/eUwrQEGNVXL2">105 Bà Huyện Thanh Quan, Phường 7, Quận 3, TP.Hồ Chí Minh (góc Tú Xương)
+										<div id="diachi">
+										<img src="/images/Nhatnghe.jpg" width="500" height="600" alt="Nhat Nghe Education JSC"/>
+										<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4149607253726!2d106.68278211435045!3d10.77949609231945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f2f79ca66c5%3A0x3c18c960b7a9acce!2sNhat+Nghe+Education+JSC!5e0!3m2!1svi!2s!4v1494492939602" width="600" height="450" frameborder="1" style="border:1" allowfullscreen></iframe>-->
+										</div>
+									</a></li>
+									<li class="mobile">(+84) 028393 22735<br />(+84) 028393 22734</li>
+									<li class="email"><a href="mailto:info@nhatnghe.com">info@nhatnghe.com</a></li>
+									<li class="time-work">Thứ Hai - Thứ Bảy: 8.00 - 19.30</li>
+								</ul>
+							</div><!-- .widget -->
+						</div>
+					</div>
+				</div><!-- .bottom2 -->
+			</div><!-- .container -->
+		</div><!-- .site-bottom -->
+
+		<footer id="footer" class="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="copyright">
+							<p>Copyright © 2019 Nhat Nghe Education JSC. <a href="#">nhatnghe.com</a></p>
+						</div><!-- .copyright -->
+					</div>
+				</div>
+			</div><!-- .container -->
+		</footer><!-- .site-footer -->
+	</div><!-- #wrapper -->	<!-- jQuery -->    
+    <script src="../js/jquery-1.11.3.js"></script>
+    <!-- Boostrap -->
+    <script src="../js/vendor/bootstrap.min.js"></script>
+    <!-- Jquery Parallax -->
+    <script src="../js/vendor/parallax.min.js"></script>
+    <!-- jQuery UI -->
+	<script src="../js/vendor/jquery-ui.min.js"></script>
+	<!-- jQuery Sticky -->
+	<script src="../js/vendor/jquery.sticky.js"></script>
+	<!-- OWL CAROUSEL Slider -->    
+    <script src="../js/vendor/owl.carousel.js"></script>
+    <!-- PrettyPhoto -->   
+    <script src="../js/vendor/jquery.prettyPhoto.js"></script>
+    <!-- Jquery Isotope -->
+    <script src="../js/vendor/isotope.pkgd.min.js"></script>
+    <!-- Main -->    
+
+    <script src="../js/main.js"></script>
+		<script>
+	$(document).ready(function() {	
+	
+	//Put in the DIV id you want to display
+	launchWindow('#dialog1');
+	
+	//if close button is clicked
+	$('.window .close').click(function () {
+		$('#mask').hide();
+		$('.window').hide();
+	});		
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+	});			
+	
+
+	$(window).resize(function () {
+	 
+ 		var box = $('#boxes .window');
+ 
+        //Get the screen height and width
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+      
+        //Set height and width to mask to fill up the whole screen
+        $('#mask').css({'width':maskWidth,'height':maskHeight});
+               
+        //Get the window height and width
+        var winH = $(window).height();
+        var winW = $(window).width();
+
+        //Set the popup window to center
+        box.css('top',  winH/2 - box.height()/2);
+        box.css('left', winW/2 - box.width()/2);
+	 
+	});	
+	
+});
+
+function launchWindow(id) {
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		//Set heigth and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		$('#mask').fadeIn(1000);	
+		$('#mask').fadeTo("slow",0.8);	
+	
+		//Get the window height and width
+		var winH = $(window).height();
+		var winW = $(window).width();
+              
+		//Set the popup window to center
+		$(id).css('top',  winH/2-$(id).height());
+		$(id).css('left', winW/2-$(id).width()/2);
+		//transition effect
+		$(id).fadeIn(2000); 
+	
+
+}
+
+</script>
+</body>
+</html>
