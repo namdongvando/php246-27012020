@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+
+	<!-- POST- tao moi database 
+		|GET - lay data
+		|PUT sua
+		|DELETE xoa
+		 -->
+	<form action="" method="GET" >
+			<!-- comment -->
+			<legend>Form dang ky abc</legend>
+			<table>
+				<tr>
+					<td>Ho Ten</td>
+					<td>
+						<input autofocus="" placeholder="Họ Tên" type="text" name=""
+						value="nguyen van teo" 
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Tài Khoản</td>
+					<td>
+						<input required="" readonly="" value="abc" type="text" name="taikhoan">
+					</td>
+				</tr>
+				<tr>
+					<td>Mât Khẩu</td>
+					<td>
+						<input required="" type="password" name="matkhau">
+					</td>
+				</tr>
+				<tr>
+					<td>Nhap Lại Mât Khẩu</td>
+					<td>
+						<input  type="password" name="">
+					</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>
+						<input  type="email" name="">
+					</td>
+				</tr>
+
+				<tr>
+					<td>Ngày Sinh</td>
+					<td>
+						<input max="2003-01-01" type="date" name="">
+					</td>
+				</tr>
+
+				<tr>
+					<td>Giới Tính</td>
+					<td>
+						<label>Nam
+							<input checked="" type="radio" name="GT">
+						</label>
+						<label>Nữ
+							<input  type="radio" name="GT">
+						</label>
+						<label>Không Tiết Lộ
+							<input  type="radio" name="GT">
+						</label>
+
+						<select name="GioiTinh" >
+							<option value="1" >Nam</option>
+							<option value="0" >Nu</option>
+							<option selected="" value="-1" >Không Tiết Lộ</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>SĐT</td>
+					<td>
+						<!-- (08) 2.342.342 -->
+						<input  type="text" value="" >
+					</td>
+				</tr>				
+				<tr>
+					<td>Địa Chỉ</td>
+					<td>
+				<textarea cols="20" rows="10" >
+					HCM
+				</textarea>
+					</td>
+				</tr>				
+				<tr>
+					<td>Sở Thích</td>
+					<td>
+						<label>Âm Nhạc
+							<input checked="" type="checkbox" name="">
+						</label>
+						<label>Thể Thao 
+							<input type="checkbox" name="">
+						</label>
+						<label>Game 
+							<input type="checkbox" name="">
+						</label>
+						<label>Lập Trình 
+							<input type="checkbox" name="">
+						</label>
+					</td>
+				</tr>				
+
+
+				<tr>
+					<td></td>
+					<td>
+						<input  type="submit" value="GỬi" >
+						<button type="button" >GỬi</button>
+						<button type="reset" >Làm Lại</button>
+					</td>
+				</tr>
+			</table>
+
+			<input type="number" max="10" min="8" name="">
+
+	</form>
+
+</body>
+</html>
