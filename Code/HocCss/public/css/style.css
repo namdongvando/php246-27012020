@@ -1,0 +1,64 @@
+body{
+	font-family: sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+.container{
+	width: 1200px;
+	background: #aaa;
+	margin: auto;	
+}
+.container .header{
+	height: 150px;
+	background: green;
+}
+.container .Content .left{
+	width: 300px;
+	background: #ddd;
+	min-height: 300px;
+	float: left;
+}
+.container .Content .center{
+	width: 600px;
+	background: #ccc;
+	min-height: 500px;
+	float: left;
+}
+.container .Content .right{
+	float: left;
+	width: 300px;
+	min-height: 400px;
+	background: #eee;
+}
+.container .footer{
+	clear: both;
+	min-height: 200px;
+	background: #666;
+}
+.Menu ul{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+		display: flex;
+	}
+.Menu ul li{
+	width: 50%;
+}
+.Menu ul li a{
+	/* bỏ gạch Chân*/
+	text-decoration: none;
+	/*màu chữ */
+	color: green;
+	/* hiển thị bằng li */
+	display: block;
+	/*cho chữ ra giữa*/
+	text-align: center;
+	padding: 10px;
+}
+.Menu ul li a:hover{
+	color: #fff;
+	background: blue;
+}
+.Menu{
+	background: orange;
+}
