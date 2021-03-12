@@ -1,5 +1,13 @@
+:root{
+	--color: #444;
+	--bg: #f70f7a;
+	--colorbg:#fff; 
+}
 *{
 	box-sizing: border-box; 
+}
+a{
+	text-decoration: none;
 }
 body{
 	font-family: sans-serif;
@@ -8,12 +16,12 @@ body{
 }
 .container{
 	width: 1200px;
-	background: #aaa;
+	 
 	margin: auto;	
 }
 .container .header{
 	height: 150px;
-	background: green;
+	background: var(--bg);
 }
 .container .Content .left{
 	padding: 10px;
@@ -24,7 +32,7 @@ body{
 }
 .container .Content .center{
 	width: 600px;
-	background: #ccc;
+	
 	min-height: 500px;
 	float: left;
 	padding:  10px;
@@ -41,6 +49,28 @@ body{
 	min-height: 200px;
 	background: #666;
 }
+.Menu ul li:hover ul{
+	display: block;
+}
+/* ul cap 2 */
+
+.Menu ul ul{
+	z-index: 9999;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	background: #aaa;
+}
+.Menu ul li{
+	position: relative;
+}
+/* the a cap 2*/
+.Menu ul li ul li a{
+	min-width: 300px;
+	background: var(--bg);
+	text-align: left;
+}
 .Menu ul{
 		list-style-type: none;
 		margin: 0px;
@@ -54,7 +84,7 @@ body{
 	/* bỏ gạch Chân*/
 	text-decoration: none;
 	/*màu chữ */
-	color: green;
+	color: var(--colorbg);
 	/* hiển thị bằng li */
 	display: block;
 	/*cho chữ ra giữa*/
@@ -66,7 +96,7 @@ body{
 	background: blue;
 }
 .Menu{
-	background: orange;
+	background: var(--bg);
 }
 .LeftMenu ul{
 		list-style-type:  none; 
@@ -160,6 +190,7 @@ border: 1px solid #aaa;
 	height: 100%;
 	background: #000000a6;
 	z-index: 999;
+	display: none;
 }
 .ThongBao .NoiDungThongBao{
 
@@ -168,6 +199,130 @@ border: 1px solid #aaa;
 	margin-top: 100px;
 }
 .ThongBao .NoiDungThongBao img{
-max-width: 100%;
-margin: auto;
+	max-width: 100%;
+	margin: auto;
+	display: block;
+}
+.BaiVietMoi{
+	margin-top: 20px;
+}
+.BaiVietMoi ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.BaiVietMoi ul .imgContent{
+	width: 30%;
+}
+
+.BaiVietMoi ul .imgContent img{
+	width: 100%;
+	height: 80px;
+	margin-top: 2px;
+}
+.BaiVietMoi ul .titleContent{
+	width: 70%;
+	padding-left: 10px;
+}
+.BaiVietMoi ul .titleContent h3{
+	margin:0;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: left;
+	height: 48px;
+	overflow: hidden;
+	color: #000;
+
+}
+.BaiVietMoi ul .titleContent p{
+	margin: 0px;
+	font-size: 14px;
+}
+.BaiVietMoi ul .titleContent a{
+	text-decoration: none;
+}
+.BaiVietMoi ul li{
+display: flex;
+border-bottom: 1px dashed #aaa;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+.BaiVietMoi-title h2{
+	border-bottom: 2px solid var(--bg);
+	margin: 0px;
+	margin-bottom: 10px;
+}
+.BaiVietMoi-title h2 span{
+	background-color: var(--bg);
+	padding: 5px 15px;
+	font-size: 18px;
+	display: inline-block;
+	color: #fff;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.BaiVietMoi ul .titleContent p .gia{
+	color: red;
+	font-size: 16px;
+	font-weight: bold;
+}
+.BaiVietMoi ul .titleContent p .giaCu{
+	color: #aaa;
+	text-decoration: line-through;	
+}
+.QuangCaoTrai {
+	margin-top: 10px;
+}
+.QuangCaoTrai img
+{
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+.TinHot{
+	display: flex;
+}
+.TinHot-Trai,.TinHot-Phai{
+	width: 50%;
+}
+.TinHot-Trai .TinTuc img{
+	width: 100%;
+}
+.TinHot-Trai .TinTuc h2:hover{
+	color: #444;
+}
+.TinHot-Trai .TinTuc h2{
+	margin: 0px;
+	color: #000;
+	font-size: 20px;
+	text-align: left;
+	height: 60px;
+	overflow: hidden;
+	line-height: 20px;
+	margin-top: 15px;
+}
+.TinHot-Trai .TinTuc p{
+	margin: 0px;
+	text-align: justify;
+}
+.TinHot-Phai ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.TinHot-Phai{
+	padding-left: 15px;
+}
+.TinHot-Phai ul li a h3{
+	margin: 0px;
+	font-size: 16px;
+	font-weight: normal;
+	border-bottom: 1px dashed #aaa;
+	line-height: 20px;
+	height: 40px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.QuangCaoCenter img{
+	max-width: 100%;
 }
