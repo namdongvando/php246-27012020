@@ -49,7 +49,7 @@ body{
 	min-height: 200px;
 	background: #666;
 }
-.Menu ul li:hover ul{
+.Menu ul li:hover ul,.Menu ul li.active ul{
 	display: block;
 }
 /* ul cap 2 */
@@ -91,7 +91,7 @@ body{
 	text-align: center;
 	padding: 10px;
 }
-.Menu ul li a:hover{
+.Menu ul li a:hover,.Menu ul li.active>a{
 	color: #fff;
 	background: blue;
 }
@@ -123,7 +123,7 @@ body{
 	display: none;
 }
 
-.LeftMenu ul li:hover ul{
+/*.LeftMenu ul li:hover ul{
 	display: block;
 }
 .LeftMenu ul li:hover .fa-caret-up{
@@ -131,7 +131,7 @@ body{
 }
 .LeftMenu ul li:hover .fa-caret-down{
 	display: block;
-}
+}*/
 .LeftMenu ul li .fa-caret-down{
 display: none;
 }
@@ -190,7 +190,7 @@ border: 1px solid #aaa;
 	height: 100%;
 	background: #000000a6;
 	z-index: 999;
-	display: none;
+	
 }
 .ThongBao .NoiDungThongBao{
 
@@ -325,4 +325,8 @@ padding-top: 5px;
 }
 .QuangCaoCenter img{
 	max-width: 100%;
+}
+#ThongBaoDangNhap{
+	color: red;
+	font-size: 14px;
 }
