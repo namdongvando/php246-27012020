@@ -1,0 +1,217 @@
+<!-- bs3-tempalate -->
+<!-- bs3-tem -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./public/css/cbootstrap.css">
+</head>
+<body>
+
+	<!--  -->
+	<!-- bs3-modal : đang ky -->
+
+	<a class="hidden btn btn-primary" data-toggle="modal" href='#modal-dangky'>Trigger modal</a>
+	<div class="modal fade" id="modal-dangky">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-center">Đăng Ký</h4>
+				</div>
+				<div class="modal-body">
+					<form action="" method="POST" role="form">
+						<div class="form-group">
+							<label for="">Tài khoản</label>
+							<input type="text" class="form-control" id="" placeholder="Tài Khoản">
+						</div>
+						<div class="form-group">
+							<label for="">Mật Khẩu</label>
+							<input type="text" class="form-control" id="" placeholder="Mật Khẩu">
+						</div>
+						<div class="form-group">
+							<label for="">Xác Nhận Mật Khẩu</label>
+							<input type="text" class="form-control" id="" placeholder="Nhập Lại Mật Khẩu">
+						</div>
+						<div class="form-group">
+							<label for="">Email</label>
+							<input type="email" class="form-control" id="" placeholder="abc@gmail.com">
+						</div>
+						<div class="form-group">
+							<label for="">Họ Tên</label>
+							<input type="text" class="form-control" id="" placeholder="Họ & Tên">
+						</div>
+						<button type="submit" class="btn btn-block btn-primary">Đăng Ký</button>
+						<p class="text-center" >----Hoặc----</p>
+							<a  class="btn btn-large btn-block btn-primary">Đăng Ký Với Tài Khoản Facebook</a>
+							<a  class="btn btn-large btn-block btn-danger">Đăng Ký Với Tài Khoản Google</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end modal đang ky -->
+
+	<!-- Modal Đăng Nhap -->
+	<a class="hidden btn btn-primary" data-backdrop="static" data-toggle="modal" href='#modal-dangnhap'>Đăng Nhập</a>
+		<div class="modal fade" id="modal-dangnhap">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title text-center">Đăng Nhập</h4>
+					</div>
+					<div class="modal-body">
+						<div class="text-center" >
+							<img src="./public/img/logo.png" class="img-responsive img-thumbnail"   alt="Image">
+							
+						</div>
+						<form action="" method="POST" role="form">
+							<div class="form-group">
+								<label for="">Tài khoản</label>
+								<input type="text" class="form-control" id="" placeholder="Input field">
+							</div>
+							<div class="form-group">
+								<label for="">Mật Khẩu</label>
+								<input type="password" class="form-control" id="" placeholder="Input field">
+							</div>
+							<button type="submit" class="btn-block btn btn-primary">Đăng Nhập</button>
+							
+							<p><a 
+								data-toggle="modal" 
+								href='#modal-dangky' 
+								data-dismiss="modal" 
+								aria-hidden="true" 
+								>Bạn chưa có tài khoản?</a> </p>
+							<p><a href="">Quên Mật Khẩu?</a></p>
+
+							<p class="text-center" >----Hoặc----</p>
+							<a  class="btn btn-large btn-block btn-primary">Login Với Facebook</a>
+							<a  class="btn btn-large btn-block btn-danger">Login Với Google</a>
+						</form>
+
+
+					</div>
+					
+				</div>
+			</div>
+		</div>	
+	<!-- Modal Đăng Nhap -->
+
+	<!-- // code -->
+	<!-- preheader content -->
+
+	<!-- header content -->
+
+	<!-- menu -->
+	<nav class="navbar MainMenu" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img src="./public/img/logo.png" alt="">
+				</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Trang Chủ</a></li>
+					<li><a href="#">Giới Thiệu</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Sản Phẩm
+							<b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Mega Menu
+							<b class="caret"></b>
+						</a>
+						<div class="MegaMenu dropdown-menu">
+							
+							<div class=" col-sm-6 col-md-6 ">
+								<h3>Sản Phẩm</h3>
+								<ul class="list-group">
+									<li class="list-group-item">
+										<span class="badge">5</span>
+										Item 1
+									</li>
+									<li class="list-group-item">
+										<span class="badge">10</span>
+										Item 2
+									</li>
+									<li class="list-group-item">
+										<span class="badge">15</span>
+										Item 3
+									</li>
+								</ul>
+							</div>
+
+							<div class=" col-sm-6 col-md-6">
+								col 2
+							</div>
+
+						</div>
+					</li>
+					<li><a href="#">Liên Hệ </a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a 
+						data-backdrop="static" 
+						data-toggle="modal" 
+						href='#modal-dangnhap'
+						 >
+						<i class="glyphicon glyphicon-user" ></i>
+					</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<!-- Dropdown  -->
+							<i class="glyphicon glyphicon-search" ></i>
+						</a>
+						<div class="timkiem dropdown-menu">
+							<form class="form-inline" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
+								</div>
+								<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search" ></i></button>
+							</form>
+						</div>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+
+	<!-- end menu -->
+
+	<!-- slide -->
+	 
+	<!-- slide -->
+
+
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
