@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ 
+	</head>
+	<body>
+	 
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Tên </th>
+					<th>Tuổi </th>
+					<th>Ngày Sinh</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Tèo</td>
+					<td>10</td>
+					<td>19-01-2000</td>
+					<td><a href="" data-title="bạn có muốn xóa bạn TÈo Không?" class="btn btn-xoa btn-danger" >Xóa</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Tí</td>
+					<td>10</td>
+					<td>19-01-2000</td>
+					<td><a href="" data-title="bạn có muốn xóa bạn Ti Không?" class="btn btn-xoa btn-danger" >Xóa</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Lượm</td>
+					<td>10</td>
+					<td>19-01-2000</td>
+					<td><a href="" data-title="bạn có muốn xóa bạn Lượm Không?" class="btn btn-xoa btn-danger" >Xóa</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="taiTable" ></div>
+
+			 
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(function(){
+				// alert("asda");
+				// ajax
+				$.ajax({
+					url :"./ajaxTable.html"
+				}).done(function(res){
+					console.log(res);
+					$("#taiTable").html(res);
+				});
+
+				$(".btn-xoa").click(function(){
+					var self =  $(this);
+					// lấy data từ html
+					var dataHTML = self.data();
+					// console.log(dataHTML)
+					//debugger;
+					if(window.confirm(dataHTML.title)){
+						// OK
+						self.parents("tr").remove();
+					}
+					return false;
+				});
+
+			});
+
+		</script> 
+	</body>
+</html>

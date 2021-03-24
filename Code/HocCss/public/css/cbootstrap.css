@@ -1,3 +1,6 @@
+body{
+	transition: all 0.5s;
+}
 .navbar.MainMenu{
 	background-color: #0a094c;
 	border-radius: 0px;
@@ -34,4 +37,57 @@
 	border: 0px;
 	margin-bottom: 0px;
 	border-bottom: 1px dashed #aaa;
+}
+.carousel-mycontrol.left {
+	left: -50px;
+}
+.carousel-mycontrol.right {
+	right: -50px;
+}
+.carousel-mycontrol{
+	position: absolute;
+	top: 45%;
+	padding: 0px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 55px;
+	font-size: 25px;
+	background: #fff;
+	border-radius: 100%;
+	transition: all 0.5s;
+}
+.carousel:hover .carousel-mycontrol.right{
+	right:  15px;
+}
+.carousel:hover .carousel-mycontrol.left{
+	left:  15px;
+}
+.carousel{
+	overflow: hidden;
+}
+.MainImg{
+	width: 100%;
+	height: 500px;
+}
+.MainMenu{
+	margin-bottom: 0px;
+}
+.thumbnail .caption h3{
+font-size: 18px;
+line-height: 20px;
+color: #000;
+text-align: justify;
+margin: 0px;
+height:  60px;
+overflow: hidden;
+margin-bottom: 5px;
+}
+.thumbnail .caption p{
+	font-size: 14px;
+	line-height: 15px;
+	text-align: justify;
+	height: 75px;
+	overflow: hidden;
+	color: #aaa;
 }
