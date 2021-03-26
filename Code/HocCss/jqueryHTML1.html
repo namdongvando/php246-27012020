@@ -6,12 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Title Page</title>
 
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 </head>
 <body>
 
-	<table id="DanhSachSinhVien" class="table table-hover">
+	<table class="table table-hover">
 		<thead>
 			<tr>
 				<th>#</th>
@@ -83,17 +84,6 @@
 			</tr>
 		</tbody>
 	</table>
-	<table class="table"> 
-		<tbody id="tableMau" >
-			<tr>
-				<td class="ma" >3</td>
-				<td class="ten" >Lượm</td>
-				<td>10</td>
-				<td class="ngaysinh" >19-01-2000</td>
-				<td><a href="" data-title="bạn có muốn xóa bạn Lượm Không?" class="btn btn-xoa btn-danger" >Xóa</a></td>
-			</tr>
-		</tbody>
-	</table>
 	<button class="btn btn-primary btn-xemThem" >Xem Thêm</button>
 	<div id="taiTable" ></div>
 
@@ -103,70 +93,7 @@
 	<script type="text/javascript">
 		$(function(){
 
-			$("#FormThemSV").submit(function(){
-				try{
-
-					// kiểm tra mã có chua?
-					if($("#MaSV").val()==""){
-						// chua nhập
-						$("#MaSV").focus();
-						throw "Bạn Chưa Nhập Mã Sinh Viên";
-					}
-					if($("#TenSV").val()==""){
-						// chua nhập
-						$("#TenSV").focus();
-						throw "Bạn Chưa Nhập Tên Sinh Viên";
-					}
-					if($("#NgaySinh").val()==""){
-						// chua nhập
-						$("#NgaySinh").focus();
-						throw "Bạn Chưa Nhập Ngày Sinh";
-					}
-					// các thông tin đã hợp lệ
-					// tạo thêm dòng
-					// Bước 1 Lấy dòng mẫu
-					var dong = $("#tableMau").html();
-					// text
-					dong = $(dong);
-					// objec DOM
-					
-					// bước 2 cập nhật thông tin của dong mẫu
-					// Tạo  đối tượng sinh viên
-					var SinhVien = {
-						Ten : $("#TenSV").val(),
-						MaSV: $("#MaSV").val(),
-						NgaySinh: $("#NgaySinh").val()
-					}
-
-					dong.children(".ma").html(SinhVien.MaSV);
-					dong.children(".ten").html(SinhVien.Ten);
-					dong.children(".ngaysinh").html(SinhVien.NgaySinh);
-
-
-					//alert(SinhVien.Ten); 
-					 // bước 3 thêm vào cuối của danh sách sinh vien 
-					$("#DanhSachSinhVien tbody").append(dong);
-					$(".btn-xoa").click(function(){
-				var self =  $(this);
-					// lấy data từ html
-					var dataHTML = self.data();
-					// console.log(dataHTML)
-					//debugger;
-					if(window.confirm(dataHTML.title)){
-						// OK
-						self.parents("tr").remove();
-					}
-					return false;
-				});
-
-					// dóng modal
-					$("#modal-id").modal("hide");		
-				}catch(ex){
-					alert(ex);
-				}
-				return false;
-
-				});
+			$("#FormThemSV").submit();
 
 			$(".btn-xemThem").click(function(){
 				// ajax
