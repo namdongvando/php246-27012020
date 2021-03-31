@@ -1,0 +1,133 @@
+body{
+	transition: all 0.5s;
+
+}
+ .navbar-brand-logo{
+ 	height: 70px;
+ }
+ .Mainmenu .navbar-nav li a{
+ 	color: #fff;
+ 	padding: 35px;
+ }
+ .Mainmenu .nav .open>a, 
+ .Mainmenu .nav .open>a:focus, 
+ .Mainmenu .nav .open>a:hover,
+ .Mainmenu .nav>li>a:focus,
+ .Mainmenu .nav>li>a:hover{
+ 	background-color: rgb(255 255 255 / 0%);
+ 	color: hotpink;
+
+ }
+ .Mainmenu .nav>li>a{
+ 	position: relative;
+ }
+ .Mainmenu .nav>li>a::after{
+ 	content: "";
+ 	width: 0%;
+ 	position: absolute;
+ 	height: 2px;
+ 	left: 0;
+ 	bottom: 25px;
+ 	transition: all 0.5s;
+ }
+ .Mainmenu .nav>li:hover >a::after{
+ 	width: 100%;
+ 	border: 1px solid hotpink;
+ 	background-color: hotpink;
+ }
+.dropdown.timkiem .dropdown-menu{
+	width: 250px;
+	padding: 0px;
+	border-top: 1px solid hotpink;
+}
+.dropdown.timkiem .dropdown-menu input{
+	height: 35px;
+	width: calc(100% - 40px);
+	border: 0px;
+	margin-right: 0px;
+}
+.dropdown.timkiem .dropdown-menu button{
+	margin-left: 0px;
+	width: 35px;
+	height: 35px;
+}
+/*chỉnh hiển thị nut trái phải */
+.carousel-mycontrol{
+	position: absolute;
+	top: 45%;
+	padding: 0px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	background-color: rgba(255 255 255 / 50%);
+	border: 2px solid #fff;
+	font-size: 20;
+	line-height: 36px;
+	color: #000;
+	border-radius: 100%;
+}
+/*chỉnh vị trí nut trái phải */
+.carousel-mycontrol.left{
+	left: 15px;
+}
+
+.carousel-mycontrol.right{
+	right: 15px;
+}
+/*  can nội dung phải */
+.carousel-caption.text-right *{
+	text-align: right;
+	
+}
+.carousel-caption.text-left *{
+	text-align: left;
+	
+}
+/*chinh lai vi tri noi dung*/
+.carousel-caption{
+
+	top: 25%;
+	bottom: auto;
+}
+/*chỉnh font cho nội dung */
+.carousel-caption *{
+	font-family: serif;
+}
+.pt-40{
+	padding-top: 40px;
+}
+.pb-40{
+	padding-bottom: 40px;
+}
+.section-title{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: serif;
+}
+.section-title.text-center span{
+	margin: auto;
+	margin-top: 10px;
+}
+.section-title span{
+	width: 40px;
+	height: 2px;
+	display: block;
+	border: 1px solid hotpink;
+	margin-top: 10px;
+}
+.section-sumary{
+	font-size: 14px;
+	color: #aaa;
+	line-height: 20px;
+}
+.section-service .thumbnail{
+	border: 0px;
+}
+.section-service .thumbnail .caption h3{
+	font-size: 18px;
+	text-transform: capitalize;
+	font-family: serif;
+}
+.section-service .thumbnail .caption p{
+	color: #aaa;
+}
