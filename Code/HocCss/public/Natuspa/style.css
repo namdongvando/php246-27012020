@@ -2,39 +2,40 @@ body{
 	transition: all 0.5s;
 
 }
- .navbar-brand-logo{
- 	height: 70px;
- }
- .Mainmenu .navbar-nav li a{
- 	color: #fff;
- 	padding: 35px;
- }
- .Mainmenu .nav .open>a, 
- .Mainmenu .nav .open>a:focus, 
- .Mainmenu .nav .open>a:hover,
- .Mainmenu .nav>li>a:focus,
- .Mainmenu .nav>li>a:hover{
- 	background-color: rgb(255 255 255 / 0%);
- 	color: hotpink;
+.navbar-brand-logo{
+	height: 70px;
+}
 
- }
- .Mainmenu .nav>li>a{
- 	position: relative;
- }
- .Mainmenu .nav>li>a::after{
- 	content: "";
- 	width: 0%;
- 	position: absolute;
- 	height: 2px;
- 	left: 0;
- 	bottom: 25px;
- 	transition: all 0.5s;
- }
- .Mainmenu .nav>li:hover >a::after{
- 	width: 100%;
- 	border: 1px solid hotpink;
- 	background-color: hotpink;
- }
+.Mainmenu .navbar-nav li a{
+	color: #fff;
+	padding: 35px;
+}
+.Mainmenu .nav .open>a, 
+.Mainmenu .nav .open>a:focus, 
+.Mainmenu .nav .open>a:hover,
+.Mainmenu .nav>li>a:focus,
+.Mainmenu .nav>li>a:hover{
+	background-color: rgb(255 255 255 / 0%);
+	color: hotpink;
+
+}
+.Mainmenu .nav>li>a{
+	position: relative;
+}
+.Mainmenu .nav>li>a::after{
+	content: "";
+	width: 0%;
+	position: absolute;
+	height: 2px;
+	left: 0;
+	bottom: 25px;
+	transition: all 0.5s;
+}
+.Mainmenu .nav>li:hover >a::after{
+	width: 100%;
+	border: 1px solid hotpink;
+	background-color: hotpink;
+}
 .dropdown.timkiem .dropdown-menu{
 	width: 250px;
 	padding: 0px;
@@ -131,3 +132,89 @@ body{
 .section-service .thumbnail .caption p{
 	color: #aaa;
 }
+/*hien noi dung*/
+#ourclinet .carousel-inner .item{
+	min-height: 350px;
+}
+/* chỉnh vị trí hiển thị */
+#ourclinet .carousel-inner .item .carousel-caption{
+	top: 25px;
+	color: #000;
+}
+/* chỉnh kích thước */
+#ourclinet .carousel-indicators li{
+	text-indent: 0px;
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+/* chỉnh kích thước hình */
+#ourclinet .carousel-indicators li img{
+	width: 40px;
+}
+#ourclinet .carousel-indicators li p{
+	display: none;
+	position: absolute;
+	width: 100px;
+	left: -15px;
+	text-align: center;
+}
+#ourclinet .carousel-indicators li.active p{
+	display: block;
+
+}
+#ourclinet .owl-item > div {
+	cursor: pointer;
+	margin: 9px 12px;
+	transition: margin 0.4s ease;
+}
+#ourclinet .owl-item.center > div {
+	cursor: auto;
+	margin: 0;
+}
+#ourclinet .owl-item.active p{
+	display: none;
+}
+#ourclinet .owl-item.active.center p{
+	display: block;
+	font-weight: bold;
+}
+#ourclinet .owl-item.active.center img{
+	width: 100% !important;
+	margin: auto;
+	transition: width 0.5s;
+}
+#ourclinet .owl-item{
+	height: 200px;
+}
+#ourclinet .owl-item img{
+	width: 80% !important;
+	margin: auto;
+	transition: width 0.5s;
+}
+#ourclinet .owl-item li::marker{
+	display: none;
+	content: "";
+}
+.imgcontent{
+	position: relative;
+
+}
+.imgcontent:hover span{
+display: block;
+}
+.imgcontent span{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 280px;
+	font-size: 40px;
+	color: #fff;
+	background-color: #ff69b4c2;
+}
+
