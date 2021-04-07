@@ -1,6 +1,6 @@
 body{
 	transition: all 0.5s;
-
+	background-color: #fafafa;
 }
 .navbar-brand-logo{
 	height: 70px;
@@ -201,7 +201,7 @@ body{
 
 }
 .imgcontent:hover span{
-display: block;
+	display: block;
 }
 .imgcontent span{
 	display: none;
@@ -218,3 +218,164 @@ display: block;
 	background-color: #ff69b4c2;
 }
 
+.section-package h3{
+	font-family: serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+}
+.section-package h2{
+	font-family: serif;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: bold;
+	color: hotpink;
+}
+.section-package p.not{
+	text-decoration: line-through;
+}
+.section-package h2 span{
+	display: block;
+	margin: auto;
+	width: 70px;
+	background-color: hotpink;
+	height: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.mt-40{
+	margin-top: 40px;
+}
+.section-package .mt-40 .caption{
+	height: 400px;
+}
+.section-package .caption{
+	height: 440px;
+	position: relative;
+}
+.section-package .caption .Xemthem{
+	position: absolute;
+	bottom: 15px;
+	right: 0px;
+	width: 100%;
+	text-align: center;
+	color: hotpink;
+	text-transform: uppercase;
+}
+.section-package .caption .Xemthem span{
+	width: 25px;
+	display: inline-block;
+	margin-bottom: 4px;
+	height: 1px;
+	background: hotpink;
+	text-align: center;
+}
+.taisaochonchungtoi{
+	background: #1c171d;
+	padding: 100px 15px !important;
+
+	
+}
+.taisaochonchungtoi *{
+	color: #fff;
+}
+.taisaochonchungtoi h1{
+	font-size: 6em;
+}
+.taisaochonchungtoi p{
+	color: #aaa;
+}
+.taisaochonchungtoi .left h1,
+.taisaochonchungtoi .left h3{
+	font-family: serif;
+}
+.taisaochonchungtoi .itemcount{
+	border: 2px dashed #fff;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	margin: auto;
+	display: block;
+	margin-top: 80px;
+}
+.taisaochonchungtoi .itemcount .count{
+	width: 70px;
+    height: 70px;
+    margin-top: 13px;
+    margin-left: 13px;
+    background: #fff;
+    color: hotpink;
+    border-radius: 100px;
+    display: block;
+    line-height: 70px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+.taisaochonchungtoi .right p{
+	text-align: center;
+	margin-top: 15px;
+	color: #fff;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+.teamItem{
+	overflow: hidden;
+	position: relative;
+}
+.teamItem:hover .iconGroup{
+	right: 0px;
+}
+.teamItem .iconGroup{
+	position: absolute;
+	width: 40px;
+	height: 160px;
+	/*background-color: #aaa;*/
+	top: 20px;
+	right: -40px;
+	transition: all 0.5s; 
+	z-index: 999;
+}
+.teamItem .iconGroup a{
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	color: hotpink;
+}
+.teamItem .teamItemImgContent{
+	width: 100%;
+	min-height: 350px;
+}
+.teamItem:hover .teamItemImgContent img{
+	width: 120%;
+	left: -10%;
+	top: -10%;
+	transition: all 0.5s;
+	transform: rotate(10deg);
+}
+.teamItem .teamItemImgContent img{
+	transition: all 0.5s;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	z-index: 1;
+}
+.teamItem .thumbnail{
+	padding: 0px;
+	border: 0px;
+}
+.teamItem:hover .thumbnail .caption{
+	bottom: 0px; 
+}
+.teamItem .thumbnail .caption{
+	transition: all 0.5s;
+	position: absolute;
+	width: 100%;
+	min-height: 80px;
+	bottom: -120px; 
+	z-index: 99;
+	text-align: center;
+	background: #cc4ef5ba;
+}
