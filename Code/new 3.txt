@@ -1,0 +1,9 @@
+SELECT * FROM `nn_hanghoa` where Gia IN(100,20)
+SELECT * FROM `nn_hanghoa` where Gia >= 50 and Gia <= 80
+SELECT * FROM `nn_hanghoa` where `Gia` BETWEEN 50 AND 80
+SELECT * FROM `nn_hanghoa` where `TenHH` like '%HH%'
+#tổng so hang hoa
+SELECT COUNT(*) as TongSoHangHoa FROM `nn_hanghoa`
+# tong hang hoa theo loai
+SELECT COUNT(*) as `TongSanPham`, `MaLoai` FROM `nn_hanghoa` GROUP BY `MaLoai`
+SELECT hh.*,loai.TenLoai,loai.TenKhongDau FROM `nn_hanghoa` as hh, `nn_loai` as loai WHERE hh.MaLoai = loai.MaLoai
