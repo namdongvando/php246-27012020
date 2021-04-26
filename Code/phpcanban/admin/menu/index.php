@@ -1,3 +1,12 @@
+<?php 
+if(isset($_REQUEST["idXoa"])){
+    $idMenu = intval($_REQUEST["idXoa"]);
+    DeleteMenuById($idMenu);
+    toUrl($_SERVER["HTTP_REFERER"]);
+}
+
+?>
+
 <ol class="breadcrumb">
     <li>
         <a href="#">Trang Chủ</a>
@@ -10,7 +19,12 @@
 <div class="container-fluid">
     <div class="panel panel-primary">
         <div class="panel-heading">
+            <div style="margin-top: -8px;" class="btn-group pull-right">
+                <a class="btn btn-success"
+                 href="/admin.php?page=menu&action=post">Thêm</a> 
+            </div>
             <h3 class="panel-title">Danh Sách Menu</h3>
+
         </div>
         <div class="panel-body" style="min-height: 300px;">
 
@@ -31,14 +45,17 @@
                     foreach ($DSMenu as $key => $Menu) {
                     ?>
                         <tr>
-                            <th>#</th>
+                            <th><?php echo $key + 1; ?></th>
                             <th><?php echo $Menu["Ten"] ?> </th>
                             <th><?php echo $Menu["Link"] ?> </th>
                             <th><?php echo $Menu["CapCha"] ?> </th>
                             <th><?php echo $Menu["STT"] ?> </th>
                             <th>
                                 <a class="btn btn-primary" href="">Sửa</a>
-                                <a class="btn btn-danger" href="">Xóa</a>
+                                <a class="btn btn-danger" 
+                                onclick="return confirm('Bạn có muốn xóa menu này không?')"
+                                href="/admin.php?page=menu&action=index&idXoa=<?php echo $Menu["Ma"] ?>">
+                                Xóa</a>
                             </th>
                         </tr>
                     <?php
@@ -50,3 +67,7 @@
         </div>
     </div>
 </div>
+
+
+ 
+

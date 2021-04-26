@@ -22,7 +22,7 @@ function GetRows($sql = null)
     $a = [];
     while ($row = $res->fetch_assoc()) {
         $a[] = $row;
-    } 
+    }
     return $a;
 }
 function GetRow($sql = null)
@@ -44,4 +44,33 @@ function GetMenu()
 {
     $sql = "SELECT * FROM `nn_menu` ORDER BY `STT` ASC";
     return GetRows($sql);
+}
+function PostMenu($menu)
+{
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+    // sql insert
+    $sql = "INSERT INTO `nn_menu`(`Ten`, `Link`, `HinhAnh`, `STT`, `HienThi`, `ViTri`, `Nhom`, `CapCha`, `GhiChu`) 
+    VALUES ( 
+        '{$menu["Ten"]}', 
+        '{$menu["Link"]}', 
+        '{$menu["HinhAnh"]}', 
+        '{$menu["STT"]}', 
+        '{$menu["HienThi"]}', 
+        '{$menu["ViTri"]}', 
+        '{$menu["Nhom"]}', 
+        '{$menu["CapCha"]}', 
+        '{$menu["GhiChu"]}')";
+    DB()->query($sql);
+    return DB()->insert_id;
+}
+function toUrl($url)
+{
+    header("Location: {$url}");
+}
+function DeleteMenuById($idMenu)
+{
+    $sql = "DELETE FROM `nn_menu` WHERE `Ma` = {$idMenu}";
+    return DB()->query($sql);
 }
