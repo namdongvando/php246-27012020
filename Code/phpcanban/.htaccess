@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^public - [L]
+RewriteRule ^gioi-thieu\.html$ index.php?page=gioithieu [L]
+RewriteRule ^lien-he\.html$ index.php?page=lienhe [L]
+RewriteRule ^admin admin.php [L]
+RewriteRule ^(.*)$ index.php [L]
+
