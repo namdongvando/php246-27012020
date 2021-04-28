@@ -1,0 +1,1 @@
+Ban không có quyền

@@ -1,9 +1,18 @@
 <?php
+PhanQuyen([Admin, QuanLy], null, Loi403);
+
 if (isset($_POST["OK"])) {
-    
+
     //echo "Đã Bấm Nút OK";
     $menu = $_POST["menu"];
     $menu["HinhAnh"] = "";
+    //hinhanh
+    var_dump($_FILES["hinhanh"]);
+    //có gửi file
+    if ($_FILES["hinhanh"]["error"] == 0) {
+        $urlHinh = UpLoadImg($_FILES["hinhanh"], "public/menu/");
+        $menu["HinhAnh"] = $urlHinh;
+    }
     //var_dump($menu);
     $idMenu = PostMenu($menu);
     toUrl("/admin.php?page=menu&action=index");

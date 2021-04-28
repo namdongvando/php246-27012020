@@ -14,6 +14,7 @@ if ($_SESSION["QuanTri"] == null) {
     // echo "Chưa Đăng Nhập";
     // chon trang dăng nhap
     $_page = "login";
+    $_action = null;
 }
 ?>
 

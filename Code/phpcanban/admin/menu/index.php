@@ -1,8 +1,24 @@
-<?php 
-if(isset($_REQUEST["idXoa"])){
-    $idMenu = intval($_REQUEST["idXoa"]);
-    DeleteMenuById($idMenu);
-    toUrl($_SERVER["HTTP_REFERER"]);
+<?php
+// admin 
+$isYes =  PhanQuyen([Admin, QuanLy,NhanVien], null, Loi403);
+if ($isYes == true) {
+    echo "có quyen";
+} else {
+    echo "không có quyen";
+}
+
+
+if (isset($_REQUEST["idXoa"])) {
+    try {
+        if(PhanQuyen([Admin, QuanLy])==false){
+            throw new Exception("Bạn không thể xóa Menu Này. Hay Lien Hệ");
+        }
+        $idMenu = intval($_REQUEST["idXoa"]);
+        DeleteMenuById($idMenu);
+        toUrl($_SERVER["HTTP_REFERER"]);
+    } catch (Exception $ex) {
+        echo $ex->getMessage();
+    }
 }
 
 ?>
@@ -20,8 +36,7 @@ if(isset($_REQUEST["idXoa"])){
     <div class="panel panel-primary">
         <div class="panel-heading">
             <div style="margin-top: -8px;" class="btn-group pull-right">
-                <a class="btn btn-success"
-                 href="/admin.php?page=menu&action=post">Thêm</a> 
+                <a class="btn btn-success" href="/admin.php?page=menu&action=post">Thêm</a>
             </div>
             <h3 class="panel-title">Danh Sách Menu</h3>
 
@@ -51,11 +66,21 @@ if(isset($_REQUEST["idXoa"])){
                             <th><?php echo $Menu["CapCha"] ?> </th>
                             <th><?php echo $Menu["STT"] ?> </th>
                             <th>
+                                
+                               <?php
+                               if(PhanQuyen([Admin,QuanLy])){
+                                ?> 
                                 <a class="btn btn-primary" href="">Sửa</a>
-                                <a class="btn btn-danger" 
-                                onclick="return confirm('Bạn có muốn xóa menu này không?')"
-                                href="/admin.php?page=menu&action=index&idXoa=<?php echo $Menu["Ma"] ?>">
-                                Xóa</a>
+                                <?php 
+                               }
+                               if(PhanQuyen([Admin,QuanLy])){
+                                ?> 
+                                <a class="btn btn-danger" onclick="return confirm('Bạn có muốn xóa menu này không?')" href="/admin.php?page=menu&action=index&idXoa=<?php echo $Menu["Ma"] ?>">
+                                    Xóa</a>
+                                <?php 
+                               }
+                               ?>
+                                
                             </th>
                         </tr>
                     <?php
@@ -67,7 +92,3 @@ if(isset($_REQUEST["idXoa"])){
         </div>
     </div>
 </div>
-
-
- 
-
