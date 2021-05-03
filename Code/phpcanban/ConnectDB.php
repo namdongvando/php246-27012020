@@ -3,21 +3,27 @@ define("Admin", "Admin");
 define("QuanLy", "QuanLy");
 define("NhanVien", "NhanVien");
 define("Loi403", "/admin.php?page=loi403");
+// php 5.6+
+global $mysqli;
+$mysqli = new mysqli("localhost", "root", "", "banhang");
+if ($mysqli->connect_errno) {
+    echo "Failed to connect to MySQL: " . $mysqli->connect_error;
+    exit();
+}
+$mysqli->set_charset("utf8");
 
+
+spl_autoload_register(function($className){
+    //echo $className;
+    $className = str_replace("\\","/",$className);
+    //echo $className;
+    include_once("{$className}.php");
+});
 
 function DB()
-{
-    $mysqli = new mysqli("localhost", "root", "", "banhang");
-    // Check connection
-    if ($mysqli->connect_errno) {
-        echo "Failed to connect to MySQL: " . $mysqli->connect_error;
-        exit();
-    }
-    $mysqli->set_charset("utf8");
-    return $mysqli;
-    // $sql = "SELECT * FROM `nn_admin` WHERE 1";
-    // $res = $mysqli->query($sql);
-    // var_dump($res->fetch_array());
+{ 
+    global $mysqli;
+    return  $mysqli; 
 }
 function GetRows($sql = null)
 {

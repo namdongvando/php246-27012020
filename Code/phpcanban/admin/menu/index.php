@@ -1,5 +1,6 @@
 <?php
 // admin 
+
 $isYes =  PhanQuyen([Admin, QuanLy,NhanVien], null, Loi403);
 if ($isYes == true) {
     echo "có quyen";

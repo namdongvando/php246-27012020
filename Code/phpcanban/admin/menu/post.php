@@ -1,4 +1,7 @@
 <?php
+
+use Model\Menu;
+
 PhanQuyen([Admin, QuanLy], null, Loi403);
 
 if (isset($_POST["OK"])) {
@@ -13,8 +16,11 @@ if (isset($_POST["OK"])) {
         $urlHinh = UpLoadImg($_FILES["hinhanh"], "public/menu/");
         $menu["HinhAnh"] = $urlHinh;
     }
-    //var_dump($menu);
-    $idMenu = PostMenu($menu);
+    //var_dump($menu);\
+    $ModelMenu = new Menu();
+    //$idMenu = PostMenu($menu);
+    $ModelMenu->Post($menu);
+
     toUrl("/admin.php?page=menu&action=index");
 }
 
