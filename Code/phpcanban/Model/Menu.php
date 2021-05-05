@@ -23,9 +23,8 @@ class Menu extends DB
         DB::$tableName = "nn_menu";
         parent::__construct();
         if ($menu != null) {
-            
-            $this->Ma = !empty($menu["Ma"]) ? $menu["Ma"] : null;
 
+            $this->Ma = !empty($menu["Ma"]) ? $menu["Ma"] : null;
             $this->Ten = !empty($menu["Ten"]) ? $menu["Ten"] : null;
             $this->Link = !empty($menu["Link"]) ? $menu["Link"] : null;
             $this->HinhAnh = !empty($menu["HinhAnh"]) ? $menu["HinhAnh"] : null;
@@ -38,11 +37,36 @@ class Menu extends DB
         }
     }
 
+    public function CapCha()
+    {
+        return new Menu($this->GetById($this->CapCha));
+    }
     public function Post($modelMenu)
     {
         return $this->Insert($modelMenu);
     }
+    public function Put($modelMenu)
+    {
+        $where ="`Ma` = '{$modelMenu["Ma"]}'";
+        return $this->Update($modelMenu,$where);
+    }
+    public function Delete($id)
+    {
+        $where ="`Ma` = '{$id}'";
+        return $this->DeleteDB($where);   
+    }
+
+    public function GetById($Ma)
+    {
+        $where = "`Ma` ={$Ma}";
+        return $this->SelectRow($where);
+    }    
+
+    public function GetAllPT($name,$indexPage,$numberRow,&$total)
+    {
+        $where = " `Ma` like '%{$name}%' or `Ten` like '%{$name}%' ";
+        return $this->SelectPT($where,$indexPage,$numberRow,$total);
+    }
 
 
 }
- 
