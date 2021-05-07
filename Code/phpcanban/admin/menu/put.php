@@ -4,24 +4,34 @@ use Model\Menu;
 
 $modelMenu = new Menu();
 
-if(isset($_POST["OK"])){
+if (isset($_POST["OK"])) {
     var_dump($_POST["menu"]);
     $menuPost = $_POST["menu"];
     $id = $menuPost["Ma"];
     $menuDetail = $modelMenu->GetById($id);
-    if($menuDetail){
-         $menuDetail["Ma"] = $menuPost["Ma"];
-         $menuDetail["Ten"] = $menuPost["Ten"];
-         $menuDetail["Link"] = $menuPost["Link"];
-         $menuDetail["STT"] = $menuPost["STT"];
-         $menuDetail["HienThi"] = $menuPost["HienThi"];
-         $menuDetail["ViTri"] = $menuPost["ViTri"];
-         $menuDetail["Nhom"] = $menuPost["Nhom"];
-         $menuDetail["CapCha"] = $menuPost["CapCha"];
-         $menuDetail["GhiChu"] = $menuPost["GhiChu"];
-         $modelMenu->Put($menuDetail);
-    }    
+    if ($menuDetail) {
+        $menuDetail["Ma"] = $menuPost["Ma"];
+        $menuDetail["Ten"] = $menuPost["Ten"];
+        $menuDetail["Link"] = $menuPost["Link"];
+        $menuDetail["STT"] = $menuPost["STT"];
+        $menuDetail["HienThi"] = $menuPost["HienThi"];
+        $menuDetail["ViTri"] = $menuPost["ViTri"];
+        $menuDetail["Nhom"] = $menuPost["Nhom"];
+        $menuDetail["CapCha"] = $menuPost["CapCha"];
+        $menuDetail["GhiChu"] = $menuPost["GhiChu"];
 
+        if ($_FILES["hinhanh"]["error"] == 0) {
+            // kiểm tra hinh cu có không để xóa
+            $hinhCu = $menuDetail["HinhAnh"];
+            $hinhCu = substr($hinhCu, 1, strlen($hinhCu));
+            if (file_exists($hinhCu)) {
+                unlink($hinhCu);
+            }
+            $urlHinh = UpLoadImg($_FILES["hinhanh"], "public/menu/");
+            $menuDetail["HinhAnh"] = $urlHinh;
+        }
+        $modelMenu->Put($menuDetail);
+    }
 }
 
 
@@ -60,7 +70,7 @@ $modelMenu = new Menu($menuEdit);
                         <div class="form-group">
                             <label for="">Tiêu Đề <span style="color:red">(*)</span></label>
                             <input value="<?php echo $modelMenu->Ten ?>" id="TieuDe" name="menu[Ten]" class="form-control" type="text">
-                            <input value="<?php echo $modelMenu->Ma ?>"  name="menu[Ma]" type="hidden">
+                            <input value="<?php echo $modelMenu->Ma ?>" name="menu[Ma]" type="hidden">
                         </div>
                         <div class="form-group">
                             <label for="">Link <span style="color:red">(*)</span></label>
